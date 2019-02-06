@@ -1,13 +1,16 @@
 {
-  "name": "vue-example",
+  "name": "vue-storybook",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "babel-loader": "^8.0.5",
     "vue": "^2.5.22"
   },
   "devDependencies": {
@@ -20,7 +23,13 @@
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.5.21"
+    "vue-template-compiler": "^2.5.21",
+    "@storybook/vue": "^4.1.11",
+    "@storybook/addon-actions": "^4.1.11",
+    "@storybook/addon-links": "^4.1.11",
+    "@storybook/addons": "^4.1.11",
+    "babel-preset-vue": "^2.0.2",
+    "@babel/core": "^7.2.2"
   },
   "eslintConfig": {
     "root": true,
